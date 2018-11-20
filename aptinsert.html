@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Dashboard</title>
+
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="dash.css">
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+
+
+  </head>
+<body>
+  <div class="header">
+      <h2 class="headerCenter">Property Management System </h2>
+    <a href="#" class="nav-trigger"><span></span></a>
+  </div>
+
+  <div class="side-nav">
+    <nav>
+      <ul>
+        <li>
+          <a href="dashboard.html">
+            <span><i class="fa fa-tachometer"></i></span>
+            <span> Dashboard </span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span><i class="fa fa-envelope"></i></span>
+            <span> Messages </span>
+          </a>
+        </li>
+        <li class="active">
+          <a href="#">
+            <span><i class="fa fa-bar-chart"></i></span>
+            <span> Leasing </span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span><i class="fa fa-credit-card-alt"></i></span>
+            <span> Appointments </span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span><i class="fa fa-list-ul"></i></span>
+            <span> Tasks </span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span><i class="fa fa-list-ul"></i></span>
+            <span> Accounting </span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span><i class="fa fa-apple"></i></span>
+            <span> Maintenance </span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span><i class="fa fa-user"></i></span>
+            <span> Reporting</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="main-content">
+    <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="#">Leasing</a>
+            </li>
+            <li class="breadcrumb-item active">Add Property</li>
+     </ol>
+
+     <div class="col-md-4 col-md-offset-4">
+             <h3> Add New Apartment </h3>
+             <hr>
+               <form class="col-12" action="insertapt.php" method="post">
+                 <p>
+                   <label for="price"> Price: </label>
+                   <input type="text" name="aptprice" id="priceApt">
+                 </p>
+                 <p>
+                   <label for="agent"> Handling Agent: </label>
+                   <input type="text" name="aptagent" id="agentApt">
+                 </p>
+
+                 <div class="form-group purple-border">
+                     <label for="exampleFormControlTextarea4">Property Address: </label>
+                       <textarea class="form-control" name="aptaddress" id="addressApt" rows="3"></textarea>
+                 </div>
+                 <p>
+                   <label for="agent">Number of Bedrooms: </label>
+                   <input type="text" name="aptbeds" id="bedsApt">
+                 </p>
+                 <p>
+                   <label for="agent"> Number of Bathrooms: </label>
+                   <input type="text" name="aptbaths" id="bathsApt">
+                 </p>
+                 <div class="form-group purple-border">
+                     <label for="exampleFormControlTextarea4">Property Area: </label>
+                       <textarea class="form-control" name="aptArea" id="areaApt" rows="3"></textarea>
+                 </div>
+                 <div class="form-group purple-border">
+                     <label for="exampleFormControlTextarea4">Property Description: </label>
+                       <textarea class="form-control" name="aptdescription" id="descriptionApt" rows="3"></textarea>
+                 </div>
+                 <p>
+                   <label for="agent"> Apartment Features: </label>
+                   <input type="text" name="aptfeatures" id="featuresApt">
+                 </p>
+                 <p>
+                   <label for="agent"> Apartment Statistics: </label>
+                   <input type="text" name="aptstatistics" id="statisticsApt">
+                 </p>
+                 <p>
+                   <label for="agent"> Availability: </label>
+                   <input type="text" name="aptavailability" id="availabilityApt">
+                 </p>
+                 <input class="btn btn-primary" type="submit" value="Submit">
+                 <input class="btn btn-danger" type="reset" value="Reset">
+
+               </form>
+         </div>
+
+
+
+
+
+  <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+  <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
+    <script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script>
+</body>
+</html>
